@@ -19,6 +19,10 @@
     display: inline-block;
 }
 
-.navibar li a:hover{
-    text-decoration: aqua;
+.navibar a{
+    text-decoration: none;
+}
+
+.navibar a:hover{
+    text-decoration: aquamarine:
 }
