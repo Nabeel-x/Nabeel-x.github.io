@@ -13,9 +13,11 @@
 .navibar ul{
     padding: 0;
     margin: 0;
+    text-decoration: none;
 }
 
 .navibar li{
+    text-decoration: none;
     display: inline-block;
 }
 
@@ -24,5 +26,5 @@
 }
 
 .navibar a:hover{
-    text-decoration: aquamarine:
+    text-decoration: aquamarine;
 }
