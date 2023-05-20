@@ -1,0 +1,24 @@
+#heading{
+    text-align: center;
+    text-decoration-color: darkgoldenrod;
+    background-color: antiquewhite;
+}
+
+.navibar{
+    background-color: black;
+    max-width: 100%;
+    max-height: fit-content;
+}
+
+.navibar ul{
+    padding: 0;
+    margin: 0;
+}
+
+.navibar li{
+    display: inline-block;
+}
+
+.navibar li a:hover{
+    text-decoration: aqua;
+}
