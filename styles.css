@@ -1,30 +1,43 @@
-#heading{
+*{
+    margin: 0;
+}
+#Heading{
     text-align: center;
-    text-decoration-color: darkgoldenrod;
+    color: rosybrown;
     background-color: antiquewhite;
 }
 
+main{
+    background-color: bisque;
+}
+
 .navibar{
-    background-color: black;
-    max-width: 100%;
+    background-color: rgb(243, 159, 4);
+    max-width: auto;
     max-height: fit-content;
 }
 
 .navibar ul{
     padding: 0;
-    margin: 0;
+    margin: -4px;
     text-decoration: none;
 }
 
 .navibar li{
+    display: flex;
     text-decoration: none;
     display: inline-block;
+    margin: 10px;
+    margin-right: 0;
+    margin-left: 0;
 }
 
 .navibar a{
+    color: black;
     text-decoration: none;
+    padding: 10px;
 }
 
-.navibar a:hover{
-    text-decoration: aquamarine;
+.navibar a:hover {
+    background-color: bisque;
 }
