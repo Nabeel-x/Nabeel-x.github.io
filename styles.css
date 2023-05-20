@@ -1,10 +1,13 @@
 *{
     margin: 0;
 }
-#Heading{
+
+#heading{
     text-align: center;
     color: rosybrown;
     background-color: antiquewhite;
+    height: 10vh;
+    align-items: center;
 }
 
 main{
@@ -19,7 +22,7 @@ main{
 
 .navibar ul{
     padding: 0;
-    margin: -4px;
+    margin: 0;
     text-decoration: none;
 }
 
