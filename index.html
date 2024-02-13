@@ -1,25 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="stylesheet" href="styles.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My Website</title>
-  </head>
-  <body>
-    <header>
-      <nav class = "navibar">
-        <ul>
-          <li><a href = "#">HOME</a></li>
-          <li><a href = "about.html">ABOUT</a></li>
-        </ul>
-      </nav>
-      <h1 id = "heading">Welcome to My Website</h1>
-    </header>
-    <main>
-        <h2>How this is made</h2>
-        <p>This is my new website which is hosted on GitHub Pages!</p>
-    </main>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <div class="headerclass">
+    <h3>Programs</h3>
+    <ul class="navlinks">
+      <a href="oops.html">
+        <li>OOPS</li>
+      </a>
+      <a href="ds.html">
+        <li>DS</li>
+      </a>
+      <a href="python.html">
+        <li>PYTHON</li>
+      </a>
+    </ul>
+  </div>
+  <div class="mainbody">
+    <div class="buttons">
+      <button id="cycle1">cycle1</button>
+      <button id="cycle2">cycle2</button>
+      <button id="cycle3">cycle3</button>
+      <button id="cycle4">cycle4</button>
+    </div>
+    
+    <div id="cycledisplay">
+      <div id="codes1">
+        <h4 class="codehead">Program</h4>
+        <pre>
+          import java.util.Scanner;
+          class Complex{
+            int real, imaginary;
+            Complex(){
+              real = 0;
+              imaginary = 0;
+            }
+            Complex(int a,int b){
+              real = a;
+              imaginary = b;
+            }
+            Complex add(Complex cn){
+              Complex temp = new Complex(0,0);
+              temp.real = this.real + cn.real;
+              temp.imaginary = this.imaginary + cn.imaginary;
+              return temp;
+            }
+            void add(Complex c1, Complex c2){
+              this.real = c1.real + c2.real;
+              this.imaginary = c1.imaginary + c2.imaginary;
+            }
+            void display(){
+              System.out.println(real+"+"+imaginary+"i");
+            }
+          }
+          class ComplexMain{
+            public static void main(String args[]){
+              Scanner sob = new Scanner(System.in);
+              int r,i;
+              System.out.print("Enter real and imaginery part: ");
+              r = sob.nextInt();
+              i = sob.nextInt();
+              Complex c1 = new Complex(r,i);
+              System.out.print("Enter real and imaginery part: ");
+              r = sob.nextInt();
+              i = sob.nextInt();
+              Complex c2 = new Complex(r,i);
+              Complex c3 = c1.add(c2);
+              System.out.print("Complex number 1: ");
+              c1.display();
+              c1.add(c2,c3);
+              System.out.print("Complex number 2: ");
+              c2.display();
+              System.out.print("cn1 and cn2 sum: ");
+              c3.display();
+              System.out.print("new complex no 1: ");
+              c1.display();
+            }
+          }
+        </pre>
+      </div>
+      <div id="codes2">
+        <code>
+
+        </code>
+      </div>
+      <div id="codes3">
+        <code>
+
+        </code>
+      </div>
+      <div id="codes4">
+        <code>
+
+        </code>
+      </div>
+    </div>
+  </div>
 </html>
