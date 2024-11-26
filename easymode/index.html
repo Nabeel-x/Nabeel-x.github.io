@@ -128,13 +128,13 @@ const computer_move = () => {
     }while(!is_available(move));
     for(let i = 1;i < 10;i++){
         if(is_available(i)){
-            board[i] = player;
-            if(check_win(player)){
+            board[i] = computer;
+            if(check_win(computer)){
                 move = i;
                 break;
             }
-            board[i] = computer;
-            if(check_win(computer)){
+            board[i] = player;
+            if(check_win(player)){
                 move = i;
                 break;
             }
