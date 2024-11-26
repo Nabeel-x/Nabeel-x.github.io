@@ -136,7 +136,6 @@ const computer_move = () => {
             board[i] = player;
             if(check_win(player)){
                 move = i;
-                break;
             }
             board[i] = ' ';
         }
