@@ -235,12 +235,14 @@ setInterval(()=>{
         running = false;
         result.classList.remove('hidden');
         return;
-    }else if(check_win(computer)){
+    }
+    if(check_win(computer)){
         result.textContent = "Computer wins";
         running = false;
         result.classList.remove('hidden');
         return;
-    }else if(check_win(player)){
+    }
+    if(check_win(player)){
         result.textContent = "player wins";
         running = false;
         result.classList.remove('hidden');
